@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item android:title="@string/Women">
+        <menu>
+            <item
+                android:id="@+id/nav_tops"
+                android:title="Tops"/>
+
+            <item
+                android:id="@+id/nav_bottoms"
+                android:title="Bottoms"/>
+
+            <item
+                android:id="@+id/nav_jeans"
+                android:title="Jeans"/>
+
+            <item
+                android:id="@+id/nav_shorts"
+                android:title="Shorts"/>
+
+            <item
+                android:id="@+id/nav_dresses"
+                android:title="Dresses &amp; Skirts"/>
+
+            <item
+                android:id="@+id/nav_loungewear"
+                android:title="Loungewear"/>
+
+            <item
+                android:id="@+id/nav_accessories"
+                android:title="Accessories &amp; Socks"/>
+
+            <item
+                android:id="@+id/nav_shoes"
+                android:title="Shoes"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/Men">
+        <menu>
+            <item
+                android:id="@+id/nav_topsM"
+                android:title="Tops"/>
+
+            <item
+                android:id="@+id/nav_bottomsM"
+                android:title="Bottoms"/>
+
+            <item
+                android:id="@+id/nav_jeansM"
+                android:title="Jeans"/>
+
+            <item
+                android:id="@+id/nav_shortsM"
+                android:title="Shorts"/>
+
+
+            <item
+                android:id="@+id/nav_loungewearM"
+                android:title="Loungewear"/>
+
+            <item
+                android:id="@+id/nav_accessoriesM"
+                android:title="Accessories &amp; Socks"/>
+
+            <item
+                android:id="@+id/nav_shoesM"
+                android:title="Shoes"/>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings"/>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About"/>
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help"/>
+        </menu>
+    </item>
+
+</menu>
