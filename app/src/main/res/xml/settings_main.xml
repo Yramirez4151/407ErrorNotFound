@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ListPreference
-        android:key="theme_appearance"
+        android:key="theme"
         android:title="Theme"
         android:icon="@drawable/ic_dark_mode"
         android:summary="%s"
