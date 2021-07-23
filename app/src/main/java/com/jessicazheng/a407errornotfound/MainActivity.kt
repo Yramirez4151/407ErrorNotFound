@@ -6,6 +6,8 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -28,8 +30,32 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
 
             when(it.itemId) {
-                R.id.nav_settings -> Toast.makeText(applicationContext, "Place Holder", Toast.LENGTH_SHORT).show()
-
+                R.id.nav_settings -> {
+                }
+                R.id.nav_help -> {
+                    MaterialDialog(this).show {
+                        title(R.string.help_title)
+                        message(R.string.help_message) {
+                            html()
+                        }
+                        positiveButton(R.string.dismiss)
+                        lifecycleOwner()
+                        cornerRadius(16f)
+                    }
+                    true
+                }
+                R.id.nav_about -> {
+                    MaterialDialog(this).show {
+                        title(R.string.about_title)
+                        message(R.string.about_message) {
+                            html()
+                        }
+                        positiveButton(R.string.dismiss)
+                        lifecycleOwner()
+                        cornerRadius(16f)
+                    }
+                    true
+                }
                 else -> Toast.makeText(this, "Place Holder", Toast.LENGTH_SHORT).show()
             }
             true

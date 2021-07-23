@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:key="theme_appearance"
+        android:title="Theme"
+        android:icon="@drawable/ic_dark_mode"
+        android:summary="%s"
+        android:entries="@array/type_of_theme"
+        android:entryValues="@array/theme_values"
+        android:defaultValue="default"/>
+    <Preference
+        android:key="category_rate_app"
+        android:title="Rate App"
+        android:icon="@drawable/ic_star"
+        android:persistent="false"
+        android:summary="Give feedback and rate the app" />
+    <Preference
+        android:key="category_contact_us"
+        android:title="Contact Us"
+        android:icon="@drawable/ic_contact_mail"
+        android:persistent="false"
+        android:summary="Feel free to email about any concerns or suggestions"/>
+    <Preference
+        android:key="category_share_app"
+        android:title="Share this App"
+        android:icon="@drawable/ic_share"
+        android:persistent="false"
+        android:summary="Recommend this app to your friends" />
+    <Preference
+        android:key="category_version"
+        android:title="Version"
+        android:icon="@drawable/ic_code"
+        android:persistent="false"
+        android:selectable="false"
+        android:summary="@string/versionName"/>
+
+</PreferenceScreen>
