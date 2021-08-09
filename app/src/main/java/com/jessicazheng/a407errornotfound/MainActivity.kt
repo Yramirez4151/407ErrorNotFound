@@ -1,5 +1,6 @@
 package com.jessicazheng.a407errornotfound
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId) {
                 R.id.nav_settings -> {
+                    val intent = Intent(this, SettingsActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.nav_help -> {
                     MaterialDialog(this).show {
