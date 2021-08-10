@@ -22,10 +22,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = NavHeaderBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
         setContentView(R.layout.activity_main)
+        //setContentView(R.layout.items)
 
+        //binding = NavHeaderBinding.inflate(layoutInflater)
+        //setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
 
