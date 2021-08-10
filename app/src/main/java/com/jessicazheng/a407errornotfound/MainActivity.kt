@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //setContentView(R.layout.items)
 
+
         //binding = NavHeaderBinding.inflate(layoutInflater)
         //setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
