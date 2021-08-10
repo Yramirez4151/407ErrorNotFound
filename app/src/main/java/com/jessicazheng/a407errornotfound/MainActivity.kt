@@ -23,18 +23,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = NavHeaderBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        //setContentView(R.layout.activity_main)
+        //setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
 
 
-        //val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
+        val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
 
-        //toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        //drawerLayout.addDrawerListener(toggle)
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
+        drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
