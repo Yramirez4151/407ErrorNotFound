@@ -7,16 +7,11 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 import com.google.android.material.navigation.NavigationView
-import com.google.firebase.auth.FirebaseAuth
-import com.jessicazheng.a407errornotfound.databinding.LoginScreenBinding
-import com.jessicazheng.a407errornotfound.databinding.NavHeaderBinding
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: NavHeaderBinding
-
-    private lateinit var firebaseAuth: FirebaseAuth
 
     lateinit var toggle : ActionBarDrawerToggle
 
@@ -24,12 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //setContentView(R.layout.items)
-
-
-        //binding = NavHeaderBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-        firebaseAuth = FirebaseAuth.getInstance()
-        checkUser()
 
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
@@ -44,21 +33,37 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
 
             when(it.itemId) {
-                R.id.nav_settings -> Toast.makeText(applicationContext, "Place Holder", Toast.LENGTH_SHORT).show()
-
+                R.id.nav_settings -> {
+                    val intent = Intent(this, SettingsActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_help -> {
+                    MaterialDialog(this).show {
+                        title(R.string.help_title)
+                        message(R.string.help_message) {
+                            html()
+                        }
+                        positiveButton(R.string.dismiss)
+                        lifecycleOwner()
+                        cornerRadius(16f)
+                    }
+                    true
+                }
+                R.id.nav_about -> {
+                    MaterialDialog(this).show {
+                        title(R.string.about_title)
+                        message(R.string.about_message) {
+                            html()
+                        }
+                        positiveButton(R.string.dismiss)
+                        lifecycleOwner()
+                        cornerRadius(16f)
+                    }
+                    true
+                }
                 else -> Toast.makeText(this, "Place Holder", Toast.LENGTH_SHORT).show()
             }
             true
-        }
-    }
-
-    private fun checkUser() {
-        val firebaseUser = firebaseAuth.currentUser
-        if(firebaseUser == null){
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        } else {
-            val email = firebaseUser.email
         }
     }
 
