@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "399586357394",
+    "project_id": "repoapp--signin",
+    "storage_bucket": "repoapp--signin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399586357394:android:594970e935d2b77084f64b",
+        "android_client_info": {
+          "package_name": "com.jessicazheng.a407errornotfound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399586357394-6ffsqt3mqpas3m0ga0tq44vknn75crp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jessicazheng.a407errornotfound",
+            "certificate_hash": "b56a48335ae9afc22fe3d3ecb70c24e2f1d1385a"
+          }
+        },
+        {
+          "client_id": "399586357394-m33sfipo8ija6sa3e63vs7hduab2d38i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPWuqUTFt1fn2Tfs7FnPzRua0L646E-ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399586357394-m33sfipo8ija6sa3e63vs7hduab2d38i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
