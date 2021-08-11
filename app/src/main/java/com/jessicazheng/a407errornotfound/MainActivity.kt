@@ -11,14 +11,29 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import kotlin.reflect.KClass
 
+import com.google.firebase.auth.FirebaseAuth
+import com.jessicazheng.a407errornotfound.databinding.LoginScreenBinding
+import com.jessicazheng.a407errornotfound.databinding.NavHeaderBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: NavHeaderBinding
+
+    private lateinit var firebaseAuth: FirebaseAuth
 
     lateinit var toggle : ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //setContentView(R.layout.items)
+
+
+        //binding = NavHeaderBinding.inflate(layoutInflater)
+        //setContentView(binding.root)
+        firebaseAuth = FirebaseAuth.getInstance()
+        checkUser()
+
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -38,6 +53,16 @@ class MainActivity : AppCompatActivity() {
                 else -> Toast.makeText(this, "Place Holder", Toast.LENGTH_SHORT).show()
             }
             true
+        }
+    }
+
+    private fun checkUser() {
+        val firebaseUser = firebaseAuth.currentUser
+        if(firebaseUser == null){
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        } else {
+            val email = firebaseUser.email
         }
     }
 

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="414dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COLOR"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TYPE"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOPS"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTTOMS"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOES"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="273dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1000"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="RED"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="ORANGE"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="YELLOW"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="GREEN"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="BLUE"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="PURPLE"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="28dp"
+            android:layout_height="39dp"
+            android:text="BLACK"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="264dp"
+            android:layout_height="21dp"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="147dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="318dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="139dp"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="269dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:srcCompat="@android:drawable/ic_menu_report_image"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comments"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Favorite"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="166dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
