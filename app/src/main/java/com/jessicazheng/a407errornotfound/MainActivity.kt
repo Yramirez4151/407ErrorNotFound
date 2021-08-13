@@ -11,15 +11,15 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import kotlin.reflect.KClass
 
-import com.google.firebase.auth.FirebaseAuth
-import com.jessicazheng.a407errornotfound.databinding.LoginScreenBinding
-import com.jessicazheng.a407errornotfound.databinding.NavHeaderBinding
+//import com.google.firebase.auth.FirebaseAuth
+//import com.jessicazheng.a407errornotfound.databinding.LoginScreenBinding
+//import com.jessicazheng.a407errornotfound.databinding.NavHeaderBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: NavHeaderBinding
+    //private lateinit var binding: NavHeaderBinding
 
-    private lateinit var firebaseAuth: FirebaseAuth
+    //private lateinit var firebaseAuth: FirebaseAuth
 
     lateinit var toggle : ActionBarDrawerToggle
 
@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         //binding = NavHeaderBinding.inflate(layoutInflater)
         //setContentView(binding.root)
-        firebaseAuth = FirebaseAuth.getInstance()
-        checkUser()
+        //firebaseAuth = FirebaseAuth.getInstance()
+        //checkUser()
 
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /*
     private fun checkUser() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser == null){
@@ -65,6 +66,7 @@ class MainActivity : AppCompatActivity() {
             val email = firebaseUser.email
         }
     }
+     */
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
@@ -81,6 +83,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun usedClick(item: MenuItem){
         val intent = Intent(this@MainActivity,UsedActivity::class.java)
+        startActivity(intent)
+    }
+    fun clothesClick(item:MenuItem){
+        val intent = Intent(this@MainActivity,FeedActivity::class.java)
         startActivity(intent)
     }
 
