@@ -79,7 +79,6 @@ class MainActivity : AppCompatActivity() {
     fun homeClick(item: MenuItem){
         val intent = Intent(this@MainActivity,HomeActivity::class.java)
         startActivity(intent)
-
     }
     fun usedClick(item: MenuItem){
         val intent = Intent(this@MainActivity,UsedActivity::class.java)
