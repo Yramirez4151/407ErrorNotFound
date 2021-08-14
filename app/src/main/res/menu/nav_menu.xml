@@ -17,35 +17,43 @@
         <menu>
             <item
                 android:id="@+id/nav_tops"
-                android:title="Tops"/>
+                android:title="Tops"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_bottoms"
-                android:title="Bottoms"/>
+                android:title="Bottoms"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_jeans"
-                android:title="Jeans"/>
+                android:title="Jeans"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_shorts"
-                android:title="Shorts"/>
+                android:title="Shorts"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_dresses"
-                android:title="Dresses &amp; Skirts"/>
+                android:title="Dresses &amp; Skirts"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_loungewear"
-                android:title="Loungewear"/>
+                android:title="Loungewear"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_accessories"
-                android:title="Accessories &amp; Socks"/>
+                android:title="Accessories &amp; Socks"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_shoes"
-                android:title="Shoes"/>
+                android:title="Shoes"
+                android:onClick="clothesClick"/>
         </menu>
     </item>
 
@@ -53,32 +61,39 @@
         <menu>
             <item
                 android:id="@+id/nav_topsM"
-                android:title="Tops"/>
+                android:title="Tops"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_bottomsM"
-                android:title="Bottoms"/>
+                android:title="Bottoms"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_jeansM"
-                android:title="Jeans"/>
+                android:title="Jeans"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_shortsM"
-                android:title="Shorts"/>
+                android:title="Shorts"
+                android:onClick="clothesClick"/>
 
 
             <item
                 android:id="@+id/nav_loungewearM"
-                android:title="Loungewear"/>
+                android:title="Loungewear"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_accessoriesM"
-                android:title="Accessories &amp; Socks"/>
+                android:title="Accessories &amp; Socks"
+                android:onClick="clothesClick"/>
 
             <item
                 android:id="@+id/nav_shoesM"
-                android:title="Shoes"/>
+                android:title="Shoes"
+                android:onClick="clothesClick"/>
         </menu>
     </item>
 

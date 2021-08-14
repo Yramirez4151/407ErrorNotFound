@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".UsedActivity"></activity>
+        <activity android:name=".FeedActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
     </application>
 
