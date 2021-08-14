@@ -9,6 +9,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+
+import android.widget.Button
 import kotlin.reflect.KClass
 
 //import com.google.firebase.auth.FirebaseAuth
@@ -28,6 +30,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //setContentView(R.layout.items)
 
+        val button : Button = findViewById(R.id.loginButton)
+        button.setOnClickListener {
+            // Handler code here.
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent);
+        }
 
         //binding = NavHeaderBinding.inflate(layoutInflater)
         //setContentView(binding.root)
