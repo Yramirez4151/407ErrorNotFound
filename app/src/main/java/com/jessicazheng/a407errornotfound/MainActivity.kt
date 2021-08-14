@@ -4,14 +4,14 @@ package com.jessicazheng.a407errornotfound
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 import com.google.android.material.navigation.NavigationView
-
-import android.widget.Button
-import kotlin.reflect.KClass
 
 //import com.google.firebase.auth.FirebaseAuth
 //import com.jessicazheng.a407errornotfound.databinding.LoginScreenBinding
@@ -56,8 +56,35 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
 
             when(it.itemId) {
-                R.id.nav_settings -> Toast.makeText(applicationContext, "Place Holder", Toast.LENGTH_SHORT).show()
-
+                R.id.nav_settings -> {
+                    val intent = Intent(this, SettingsActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_about -> {
+                    MaterialDialog(this).show {
+                        title(R.string.about_title)
+                        message(R.string.about_message) {
+                            html()
+                        }
+                        positiveButton(R.string.dismiss)
+                        lifecycleOwner()
+                        cornerRadius(16f)
+                    }
+                    true
+                }
+                R.id.nav_help -> {
+                    MaterialDialog(this).show {
+                        title(R.string.help_title)
+                        message(R.string.help_message) {
+                            html()
+                        }
+                        positiveButton(R.string.dismiss)
+                        lifecycleOwner()
+                        cornerRadius(16f)
+                    }
+                    true
+                }
                 else -> Toast.makeText(this, "Place Holder", Toast.LENGTH_SHORT).show()
             }
             true
@@ -94,6 +121,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun clothesClick(item:MenuItem){
         val intent = Intent(this@MainActivity,FeedActivity::class.java)
+        startActivity(intent)
+    }
+    fun clothesInfoClick(item:MenuItem){
+        val intent = Intent(this@MainActivity, ClothInfoActivity::class.java)
         startActivity(intent)
     }
 

@@ -26,6 +26,7 @@
         <activity android:name=".UsedActivity"></activity>
         <activity android:name=".FeedActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ClothInfoActivity"></activity>
     </application>
 
 </manifest>
