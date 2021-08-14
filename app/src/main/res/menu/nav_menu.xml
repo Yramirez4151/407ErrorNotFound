@@ -10,8 +10,14 @@
         android:onClick="homeClick"/>
     <item
         android:id="@+id/usedinfo"
+        android:icon="@drawable/ic_hanger"
         android:title="Used Clothes Information"
         android:onClick="usedClick"/>
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/ic_info"
+        android:title="More Info"
+        android:onClick="clothesInfoClick"/>
 
     <item android:title="@string/Women">
         <menu>
@@ -113,10 +119,6 @@
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_help"
                 android:title="Help"/>
-            <item
-                android:id="@+id/nav_info"
-                android:title="More Info"
-                android:onClick="clothesInfoClick"/>
         </menu>
     </item>
 

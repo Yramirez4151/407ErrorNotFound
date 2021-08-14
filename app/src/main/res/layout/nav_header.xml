@@ -14,7 +14,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_person" />
+        android:src="@drawable/selena" />
 
     <TextView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         android:id="@+id/user_name"
         android:paddingTop="8dp"
         android:textSize="20dp"
-        android:hint="Profile Name"
+        android:text="Selena Gomez"
         android:textColor="@color/black"
         android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:textSize="16dp"
         android:textColor="@color/black"
-        android:hint="example@email.com"/>
+        android:hint="407errornotfound@gmail.com"/>
 
     <View
         android:layout_width="match_parent"
